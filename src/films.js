@@ -32,13 +32,25 @@ function orderAlphabetically(array) {
 }
 
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(moviesArray) {
+  const sortedMovies = [...moviesArray].sort((a, b) => {
+    if (a.year !== b.year) {
+      return a.year - b.year;
+    }
+    return a.title.localeCompare(b.title);
+  });
+  console.log("EXERCICE 5 ->", sortedMovies);
+  return sortedMovies;
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
-
+function moviesAverageByCategory(array, movieGenre) {
+  const movies = array.filter(movie => movie.genre.includes(movieGenre)); 
+  const sum = movies.reduce((acc, med) => acc + med.score, 0);
+  const average = sum / movies.length;
+  let result = parseFloat(average.toFixed(2));
+  console.log("EXERCICE 6 ->", result);
+  return result;
 }
 
 // Exercise 7: Modify the duration of movies to minutes
