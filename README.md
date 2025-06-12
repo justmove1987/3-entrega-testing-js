@@ -129,6 +129,7 @@ an array of information about 250 movies.
 
 ## Exercises
 🟢 Level 1
+
 🦾​ Exercise 1: Get All Directors
 Function: getAllDirectors(movies)
 
@@ -198,6 +199,7 @@ Use .filter() to obtain the movies by genere, Use .reduce() to sum their scores.
 ---
 
 🟡 Level 2
+
 🦾​ Exercise 7: Convert Movie Durations to Minutes
 Function: hoursToMinutes(movies)
 
@@ -210,6 +212,7 @@ Use a regular for to iterate a spread array Use .split() to create a new array w
 ---
 
 🔴 Level 3
+
 🦾​ Exercise 8: Best Film of the Year
 Function: bestFilmOfYear(movies, year)
 
