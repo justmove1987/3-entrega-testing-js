@@ -2,9 +2,51 @@
 
 ## Introduction
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+> **Duration:** 2 weeks  
+> **Goal:** Implement filtering, sorting and metrics logic over a movie array using ES6.
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
+---
+
+## 📝 Overview
+
+An audiovisual company needs a web application that allows its employees to quickly search and manage movies. In this sprint, you’ll build the **core logic** of the app, based on a static dataset of 250 movies. Although we’re not consuming an API yet, this front-end logic will serve as the foundation for future development.
+
+<br>
+
+🎯 Implementation Tasks
+In src/films.js, write pure functions using only ES6 array methods:
+
+filterByYear(year)
+
+filterByDirector(director)
+
+filterByGenre(genre)
+
+sortByTitle(order) (asc/desc)
+
+sortByRating(order)
+
+calculateAverageDuration()
+
+percentageByGenre()
+
+…and any additional functions required by the tests.
+
+Important: Do not use for/while loops. Only map, filter, reduce, and sort.
+
+---
+
+## 📂 Repository Structure
+
+```bash
+.
+├── src
+│   ├── data.js          # Array with 250 movie objects
+│   └── films.js         # Where you’ll implement all logic
+├── tests
+│   └── films.spec.js    # Jest tests defining each function
+├── package.json
+└── README.md            # This file
 
 <br>
 
@@ -82,5 +124,15 @@ an array of information about 250 movies.
 - You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
 
 - Don't forget to include the capture of the test results in the virtual campus.
+
+<br>
+
+## Screenshoots
+
+![test passed](src/img/image.png)
+
+<br>
+
+![test example](src/img/image-1.png)
 
 
