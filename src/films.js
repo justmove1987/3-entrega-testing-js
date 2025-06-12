@@ -1,18 +1,18 @@
-// Exercise 1: Get the array of all directors.
+// Exercise 1
 function getAllDirectors(array) {
   let result =  array.map(movie => movie.director);
   console.log("EXERCICE 1 ->", result);
   return result;
 }
 
-// Exercise 2: Get the films of a certain director
+// Exercise 2
 function getMoviesFromDirector(array, director) {
  const result = array.filter(movie => movie.director == director)
   console.log("EXERCICE 2 ->", result);
   return result;
 }
 
-// Exercise 3: Calculate the average of the films of a given director.
+// Exercise 3
 function moviesAverageOfDirector(array, director) {
   const movies = array.filter(movie => movie.director == director);
   const sum = movies.reduce((acc, med) => acc + med.score, 0);
@@ -22,7 +22,7 @@ function moviesAverageOfDirector(array, director) {
   return result;
 }
 
-// Exercise 4:  Alphabetic order by title 
+// Exercise 4
 function orderAlphabetically(array) {
   const titles = array.map(movie => movie.title);
   let titlesAlphabetic = titles.sort();
@@ -31,7 +31,7 @@ function orderAlphabetically(array) {
   return result;
 }
 
-// Exercise 5: Order by year, ascending
+// Exercise 5
 function orderByYear(moviesArray) {
   const sortedMovies = [...moviesArray].sort((a, b) => {
     if (a.year !== b.year) {
@@ -43,7 +43,7 @@ function orderByYear(moviesArray) {
   return sortedMovies;
 }
 
-// Exercise 6: Calculate the average of the movies in a category
+// Exercise 6
 function moviesAverageByCategory(array, movieGenre) {
   const movies = array.filter(movie => movie.genre.includes(movieGenre)); 
   const sum = movies.reduce((acc, med) => acc + med.score, 0);
@@ -53,7 +53,7 @@ function moviesAverageByCategory(array, movieGenre) {
   return result;
 }
 
-// Exercise 7: Modify the duration of movies to minutes
+// Exercise 7
 function hoursToMinutes(movies) {
   const converted = movies.map(movie => {
     const { duration } = movie;
@@ -83,7 +83,7 @@ function hoursToMinutes(movies) {
   return converted;
 }
 
-// Exercise 8: Get the best film of a year
+// Exercise 8
 function bestFilmOfYear(movies, year) {
   const filmsOfThatYear = movies.filter(movie => movie.year === year);
   if (filmsOfThatYear.length === 0) {
